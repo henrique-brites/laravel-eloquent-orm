@@ -30,7 +30,11 @@ class Client extends Model
         'soccer_team_id'
     ];
 
-    public function soccerTeam() { //many-to-one
+    /*public function time(){ //many-to-one
+        return $this->belongsTo(SoccerTeam::class,'soccer_team_id');
+    }*/
+
+    public function soccerTeam(){ //many-to-one
         return $this->belongsTo(SoccerTeam::class);
     }
 
